@@ -22,7 +22,8 @@ const app = express();
 app.use(helmet());
 const allowedOrigins = [
   process.env.FRONTEND_URL,
-  'http://localhost:5173'
+  'http://localhost:5173',
+  'https://a1fencelims.netlify.app'
 ];
 
 app.use(cors({
